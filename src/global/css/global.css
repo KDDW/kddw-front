@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: none;
+}
+
+:root {
+	--dark-bg: #090017;
+}
+
+body {
+	background: var(--dark-bg);
+	overflow-x: hidden;
+}
+
+#canvas {
+	position: absolute;
+	z-index: -100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
