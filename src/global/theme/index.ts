@@ -28,6 +28,7 @@ export const globalTheme = createTheme({
 		},
 		MuiSelect: {
 			styleOverrides: {
+				// @ts-ignore
 				root: {
 					borderRadius: "6px",
 				},

@@ -142,3 +142,5 @@ const init = () => {
 createHexagons(HEX_NUMBER);
 init();
 window.onresize = init;
+
+export {};

@@ -1,6 +1,6 @@
 import { BoxProps } from "@mui/material";
 import React from "react";
-import Image, { ImageProps } from "../../atoms/Image/Image";
+import Image from "../../atoms/Image/Image";
 import { LogoDefaultStyles } from "./LogoStyles";
 
 export type LogoProps = BoxProps;

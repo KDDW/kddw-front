@@ -12,7 +12,11 @@ export const TranslationWrapper = ({ children }: TranslationWrapperProps) => {
 
 	if (data?.length > 1) {
 		const lang = data[1].split("&")[0];
-		if (Object.values(AVAILABLE_LANGUAGES).includes(lang)) {
+		if (
+			Object.values(AVAILABLE_LANGUAGES).includes(
+				lang as AVAILABLE_LANGUAGES
+			)
+		) {
 			i18n.changeLanguage(lang);
 		}
 	}

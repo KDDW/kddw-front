@@ -35,7 +35,7 @@ export const Search = (props: SearchProps) => {
 				value={props.search}
 			/>
 			<Button type="submit" variant="contained" color="primary">
-				{i18n.t("search")}
+				<>{i18n.t("search")}</>
 			</Button>
 		</form>
 	);

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { env } from "../global/constants/env";
-import { StorageKeys } from "../global/constants/storageEnum";
+import { StorageKeys } from "../global/constants/storageKeys";
 import { storage } from "../utils/storage";
 
 const api = axios.create({
@@ -13,7 +13,7 @@ const api = axios.create({
 api.interceptors.request.use(async (config) => {
 	const token = storage.get(StorageKeys.TOKEN);
 	if (token) {
-		api.headers["Authorization"] = `Bearer ${token}`;
+		api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 	}
 	return config;
 });
