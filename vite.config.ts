@@ -13,5 +13,4 @@ export default defineConfig({
 	build: {
 		assetsDir: "public",
 	},
-	base: "src",
 });
