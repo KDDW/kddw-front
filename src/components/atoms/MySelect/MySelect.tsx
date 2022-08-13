@@ -4,7 +4,6 @@ import {
 	MenuItem,
 	Select,
 	SelectChangeEvent,
-	SelectProps,
 	SxProps,
 } from "@mui/material";
 import React from "react";
@@ -12,7 +11,7 @@ import React from "react";
 interface MySelectProps {
 	selectedValue: string;
 	options: Array<{ value: string; label: string }>;
-	handleChangeSelectedValue: (e: SelectChangeEvent<any>) => void;
+	handleChangeSelectedValue: (e: SelectChangeEvent) => void;
 	label: string;
 	styles?: {
 		formControlSx?: SxProps;

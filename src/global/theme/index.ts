@@ -28,6 +28,7 @@ export const globalTheme = createTheme({
 		},
 		MuiSelect: {
 			styleOverrides: {
+				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				// @ts-ignore
 				root: {
 					borderRadius: "6px",
